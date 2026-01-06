@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>小明的个人主页</title>
+    
+    <!-- ========== 下面是 CSS 样式 ========== -->
+    <style>
+        /* 页面整体样式 */
+        body {
+            font-family: "微软雅黑", Arial, sans-serif;
+            background-color: #f5f5f5;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+        }
+
+        /* 大标题样式 */
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+            border-bottom: 3px solid #3498db;
+            padding-bottom: 10px;
+        }
+
+        /* 小标题样式 */
+        h2 {
+            color: #3498db;
+            border-left: 4px solid #3498db;
+            padding-left: 10px;
+            margin-top: 30px;
+        }
+
+        /* 头像样式 */
+        img {
+            border-radius: 50%;
+            border: 3px solid #3498db;
+            display: block;
+            margin: 0 auto;
+        }
+
+        /* 段落样式 */
+        p {
+            color: #333;
+            text-indent: 2em;
+        }
+
+        /* 列表样式 */
+        ul, ol {
+            background-color: #fff;
+            padding: 15px 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        li {
+            margin: 8px 0;
+        }
+
+        /* 链接样式 */
+        a {
+            color: #e74c3c;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+            color: #c0392b;
+        }
+
+        /* 表格样式 */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: #fff;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        th {
+            background-color: #3498db;
+            color: white;
+            padding: 12px;
+        }
+
+        td {
+            padding: 12px;
+            border-bottom: 1px solid #ddd;
+            text-align: center;
+        }
+
+        tr:hover {
+            background-color: #f1f1f1;
+        }
+
+        /* 表单样式 */
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        input:focus, textarea:focus {
+            border-color: #3498db;
+            outline: none;
+        }
+
+        button {
+            background-color: #3498db;
+            color: white;
+            padding: 10px 30px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #2980b9;
+        }
+
+        /* 分割线样式 */
+        hr {
+            border: none;
+            height: 2px;
+            background: linear-gradient(to right, #3498db, #e74c3c, #f39c12);
+            margin: 20px 0;
+        }
+
+        /* 页脚样式 */
+        footer {
+            text-align: center;
+            color: #777;
+            font-size: 14px;
+            margin-top: 30px;
+        }
+    </style>
+    <!-- ========== CSS 样式结束 ========== -->
+    
+</head>
+<body>
+
+    <h1>欢迎来到小明的个人主页</h1>
+    
+    <hr>
+
+    <h2>关于我</h2>
+    <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=xiaoming" alt="我的头像" width="150">
+    <p>大家好！我叫<strong>小明</strong>，今年20岁，是一名计算机专业的大学生。</p>
+    <p>我喜欢编程、阅读和打篮球。我的座右铭是：<em>"学无止境，每天进步一点点。"</em></p>
+
+    <h2>我的技能</h2>
+    <ul>
+        <li>HTML 网页制作</li>
+        <li>Python 编程</li>
+        <li>Office 办公软件</li>
+        <li>摄影与修图</li>
+    </ul>
+
+    <h2>我的学习计划</h2>
+    <ol>
+        <li>学习 HTML 基础</li>
+        <li>学习 CSS 样式</li>
+        <li>学习 JavaScript 交互</li>
+        <li>完成一个完整的网站项目</li>
+    </ol>
+
+    <h2>我喜欢的网站</h2>
+    <p>以下是一些我经常访问的网站：</p>
+    <ul>
+        <li><a href="https://www.baidu.com">百度</a> - 搜索引擎</li>
+        <li><a href="https://www.bilibili.com">哔哩哔哩</a> - 学习视频</li>
+        <li><a href="https://github.com">GitHub</a> - 代码托管</li>
+    </ul>
+
+    <h2>联系我</h2>
+    <table border="1">
+        <tr>
+            <th>联系方式</th>
+            <th>内容</th>
+        </tr>
+        <tr>
+            <td>邮箱</td>
+            <td>xiaoming@example.com</td>
+        </tr>
+        <tr>
+            <td>电话</td>
+            <td>138-0000-0000</td>
+        </tr>
+        <tr>
+            <td>地址</td>
+            <td>中国北京市</td>
+        </tr>
+    </table>
+
+    <h2>给我留言</h2>
+    <form>
+        <p>
+            <label>你的名字：</label><br>
+            <input type="text" name="name">
+        </p>
+        <p>
+            <label>你的邮箱：</label><br>
+            <input type="email" name="email">
+        </p>
+        <p>
+            <label>留言内容：</label><br>
+            <textarea name="message" rows="4" cols="30"></textarea>
+        </p>
+        <p>
+            <button type="submit">提交留言</button>
+        </p>
+    </form>
+
+    <hr>
+
+    <footer>
+        <p>版权所有 &copy; 2025 小明 | 最后更新：2025年1月</p>
+    </footer>
+
+</body>
+</html>
